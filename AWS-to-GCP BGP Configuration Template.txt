@@ -1,0 +1,69 @@
+Pre-shared Keys:
+================
+Key 1 (Tunnel 1): 
+Key 2 (Tunnel 2): 
+Key 3 (Tunnel 3): 
+Key 4 (Tunnel 4): 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+ASN's:
+===============
+
+AWS ASN = 65501
+GCP ASN = 65515
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+BGP Gateways:
+AWS BGP GW:              169.254.0.1/30
+GCP BGP GW:              169.254.0.2/30
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Networks:
+===============
+
+Network 1
+BGP Identifier:          169.254.0.8/30
+AWS Tunnel 1:            169.254.0.9
+GCP Tunnel 1:            169.254.0.10
+BGP Broadcast:           169.254.0.11
+
+Network 2:
+BGP Identifier:          169.254.0.12/30
+AWS Tunnel 2:            169.254.0.13
+GCP Tunnel 2:            169.254.0.14
+BGP Broadcast:           169.254.0.15
+
+Network 3:
+BGP Identifier:          169.254.0.16/30
+AWS Tunnel 2:            169.254.0.17
+GCP Tunnel 2:            169.254.0.18
+BGP Broadcast:           169.254.0.19
+
+Network 4:
+BGP Identifier:          169.254.0.20/30
+AWS Tunnel 2:            169.254.0.21
+GCP Tunnel 2:            169.254.0.22
+BGP Broadcast:           169.254.0.23
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+AWS Outside IP
+===============
+
+Outside IP Tunnel 1:     **Enter  IP Here**
+Outside IP Tunnel 2:     **Enter  IP Here**
+Outside IP Tunnel 3:     **Enter  IP Here**
+Outside IP Tunnel 4:     **Enter  IP Here**
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+GCP Interface
+===============
+
+GPC Interface Tunnel 1:	 **Enter  IP Here**
+GCP Interface Tunnel 2:	 **Enter  IP Here**
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
