@@ -1,4 +1,4 @@
-# AWS ↔ GCP VPN Tunnel Configuration w/ BGP
+# AWS ↔ GCP Highly Available (HA) VPN Tunnel w/ BGP Configuration
 
 ![VPN Topology Diagram](/Screenshots/diagram.jpg)
 
@@ -40,20 +40,20 @@ This guide walks you through the complete deployment of a high-availability VPN 
 
 ## 🛠️ Terraform Configuration
 
-### 🔑 1-authentication.tf
+### 🔑 `1-authentication.tf`
 
 Handles provider authentication for both AWS and GCP.
 
 - Uses environment variables or credentials file
 - Includes provider blocks for `aws` and `google`
 
-### ☁️ 2-backend.tf
+### ☁️ `2-backend.tf`
 
 Sets up remote backend storage for Terraform state (e.g., GCS or S3).
 
 - Configure appropriately to avoid state loss
 
-### 🧮 3-variables.tf
+### 🧮 `3-variables.tf`
 
 Defines input variables for reusable deployment:
 
@@ -63,7 +63,7 @@ Defines input variables for reusable deployment:
 - ASNs
 - Region variables
 
-### 🏗️ 4-aws-vpn-connections.tf
+### 🏗️ `4-aws-vpn-connections.tf`
 
 Deploys the following AWS infrastructure:
 
@@ -71,7 +71,7 @@ Deploys the following AWS infrastructure:
 - Virtual Private Gateways (VGWs)
 - Site-to-Site VPN connections (with BGP and logging)
 
-### 🌐 5-gcp-vpn-connections.tf
+### 🌐 `5-gcp-vpn-connections.tf`
 
 Creates GCP resources required for HA VPN setup:
 
