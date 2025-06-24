@@ -139,7 +139,7 @@ Create two VPN connections:
   ![AWS-VPN-Connection1-T1-S3](/Screenshots/aws-vpn-connection1-tunnel1-section3.jpg)
 
   - **Create VPN connection:**
-  ![AWS-VPN-Last-Section](/Screenshots/aws-vpn-connection1-last-section.jpg)
+  ![AWS-VPN1-Last-Section](/Screenshots/aws-vpn-connection1-last-section.jpg)
 
 #### VPN 2 – `aws-to-gcp-vpn2`
 
@@ -157,7 +157,8 @@ Create two VPN connections:
   ![AWS-VPN-Connection2-T4-S1](/Screenshots/aws-vpn-connection2-tunnel4-section1.jpg)
   ![AWS-VPN-Connection1-T1-S3](/Screenshots/aws-vpn-connection1-tunnel1-section3.jpg)
 
-✅ Enable logging to **Amazon CloudWatch**.
+  - **Create VPN connection:**
+  ![AWS-VPN2-Last-Section](/Screenshots/aws-vpn-connection2-last-section.jpg)
 
 ---
 
@@ -169,7 +170,7 @@ Create two VPN connections:
 
 1. Go to **Hybrid Connectivity > VPN > Peer VPN gateways**
 2. Click **Create Peer VPN Gateway**
-![GCP-Peer-VPN-GW1](/Screenshots/gcp-peer-vpn-gw1.jpg)]
+![GCP-Peer-VPN-GW1](/Screenshots/gcp-peer-vpn-gw1.jpg)
 
 3. Set:
    - **Name:** `gcp-to-aws-peer-vpn-gw`

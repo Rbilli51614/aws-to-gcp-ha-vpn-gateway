@@ -64,6 +64,7 @@ This guide walks you through the complete deployment of a high-availability VPN 
 │   ├── gcp-vpn-tunnel-2.jpg
 │   ├── gcp-vpn-tunnel-3.jpg
 │   ├── gcp-vpn-tunnel-4.jpg
+│   ├── gcp-vpn-tunnels-complete.jpg
 │   ├── PSK.png
 │   ├── teardown-aws-cgw-results.jpg
 │   ├── teardown-aws-vpgw-results.jpg
