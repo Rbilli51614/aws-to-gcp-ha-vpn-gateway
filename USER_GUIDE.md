@@ -75,6 +75,7 @@ The Cloud Router manages dynamic BGP sessions for the VPN tunnels.
 
 5. Click **Create & Continue**
 6. After creation, copy and note the public IP addresses for **Interface 0** and **Interface 1**. These will be used in AWS.
+   
    ![GCP-HA-VPN-Gateway](/Screenshots/gcp-ha-vpn-gw.jpg)
 
 ---
@@ -110,7 +111,7 @@ These represent the AWS side of the VPN and are attached to your AWS VPC.
 🔧 **Steps**
 
 1. Go to **VPC > Virtual Private Network > Virtual Private Gateways**
-2. Click **Create Virtual Private Gateway** twice:
+2. Click **Create Virtual Private Gateway**:
    - **Name:** `aws-to-gcp-vpn-gw` — **ASN:** `65501`
    ![AWS-Virtual-Private-GW-Results](/Screenshots/aws-virtual-pgw-results.jpg)
 
@@ -124,8 +125,8 @@ Create two VPN connections:
 
 #### VPN 1 – `aws-to-gcp-vpn1`
 
-- **Target Gateway:** `vpgw1`
-- **Customer Gateway:** `cgw1`
+- **Target Gateway:** `aws-to-gcp-vpn-gw`
+- **Customer Gateway:** `aws-to-gcp-cgw1`
 - **Routing Type:** Dynamic (BGP)
 ![AWS-VPN-Connection1-Section1](/Screenshots/aws-vpn-connection1-first-section.jpg)
 
@@ -143,8 +144,8 @@ Create two VPN connections:
 
 #### VPN 2 – `aws-to-gcp-vpn2`
 
-- **Target Gateway:** `vpgw2`
-- **Customer Gateway:** `cgw2`
+- **Target Gateway:** `aws-to-gcp-vpn-gw`
+- **Customer Gateway:** `aws-to-gcp-cgw2`
 - **Routing Type:** Dynamic (BGP)
 ![AWS-VPN-Connection1-Section2](/Screenshots/aws-vpn-connection2-first-section.jpg)
 
@@ -255,18 +256,18 @@ Use `65501` as the **Peer ASN** for each tunnel.
 ### On GCP
 
 - Go to **VPN Overview**
-- Confirm all tunnels show `Status: Established`
-- Confirm all BGP sessions show `Status: BGP Established`
+- Confirm all tunnels show `Status - Established`
+- Confirm all BGP sessions show `Status - BGP Established`
 
-- **Final Output**
+- **Final Output**: Objective Complete
 
-  - **Cloud VPN Tunnels:**
+  - **Cloud VPN Tunnels:** - All four (4) tunnels are established
     ![GCP-Cloud-VPN-Tunnels](/Screenshots/gcp-cloud-vpn-tunnels.jpg)
 
-  - **Cloud VPN Gateways:**
+  - **Cloud VPN Gateways:** - VPN Gateway linked to all four (4) tunnels
     ![GCP-Cloud-VPN-Gateways](/Screenshots/gcp-cloud-vpn-gateways.jpg)
   
-  - **Peer VPN Gateways:**
+  - **Peer VPN Gateways:** - Peer VPN Gateways used in all four (4) tunnels
   ![GCP-Peer-VPN-Gateways](/Screenshots/gcp-peer-vpn-gateways.jpg)
 
   - **GCP Cloud Router: (Complete)**
@@ -277,7 +278,7 @@ Use `65501` as the **Peer ASN** for each tunnel.
 - Go to **VPN Connections**
 - Under each VPN, verify:
   - Tunnel status = `UP`
-  - Routing = `1 BGP ROUTES`
+  - Routing Details = `1 BGP ROUTES`
 
 ### **Final Output**
 
@@ -298,15 +299,15 @@ To avoid unwanted charges, delete the resources when finished.
 1. Delete both **VPN Connections**
 ![Teardown-AWS-VPN-Connections-Results](/Screenshots/teardown-aws-vpn-connections-results.jpg)
 
-2. Delete both **VGWs**
+2. Delete the **Virtual Private Gateway**
 ![Teardown-AWS-VPGW-Results](/Screenshots/teardown-aws-vpgw-results.jpg)
 
-3. Delete both **CGWs**
-![Teardown-AWS-CGW-Results](/Screenshots/teardown-aws-cgw-results.jpg) - **FIX THIS ONE**
+3. Delete both **Customer Gateways**
+![Teardown-AWS-CGW-Results](/Screenshots/teardown-aws-cgw-results.jpg)
 
 ### GCP
 
-1. Delete all **VPN Tunnels**
+1. Delete all *four (4)* **VPN Tunnels**
 2. Delete the **Cloud VPN Gateway**
 3. Delete the **Peer VPN Gateway**
 4. Delete the **Cloud Router**

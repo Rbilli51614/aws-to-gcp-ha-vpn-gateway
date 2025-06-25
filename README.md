@@ -172,7 +172,7 @@ You must update this file with actual interface IPs after tunnel provisioning.
 
 1. Generate Pre-shared Keys (PSK's) at [https://pskgen.com](https://pskgen.com)
    - Extract four (4) PSK's that will be used for the tunnels.
-2. Customize `3-variables.tf` with your regions and IPs
+2. Customize `1-authentication.tf`, `2-backend.tf`, and `3-variables.tf` with your JSON credentials, bucket name, state file name, provider regions, provider zones, and IP configuration.
 3. Run Terraform:
 
    ```bash
