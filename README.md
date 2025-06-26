@@ -267,7 +267,7 @@ gcloud compute routers get-status gcp-to-aws-cloud-router --region=southamerica-
 
 This project was built with inspiration, mentorship, and guidance from:
 
-- Sensei **"Malgus" Theo**
+- Sensei **"Darth Malgus" Theo**
 - Lord **Beron**
 - Sir **Rob**
 - Jedi Master **Derrick**

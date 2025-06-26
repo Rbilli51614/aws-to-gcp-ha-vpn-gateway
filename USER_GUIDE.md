@@ -55,7 +55,7 @@ The Cloud Router manages dynamic BGP sessions for the VPN tunnels.
    - **BGP Identifier:** Leave blank
    - **Advertised Routes:** Use default (advertise all visible subnets)
 4. Click **Create**
-![GCP-Cloud-Router-Build](/Screenshots/GCP-Cloud-Router-Build.jpg)
+![GCP-Cloud-Router-Build](/Screenshots/gcp-cloud-router-build.jpg)
 
 ---
 
@@ -125,7 +125,7 @@ Create two VPN connections:
 
 #### VPN 1 – `aws-to-gcp-vpn1`
 
-- **Target Gateway:** `aws-to-gcp-vpn-gw`
+- **Virtual Private Gateway:** `aws-to-gcp-vpn-gw`
 - **Customer Gateway:** `aws-to-gcp-cgw1`
 - **Routing Type:** Dynamic (BGP)
 ![AWS-VPN-Connection1-Section1](/Screenshots/aws-vpn-connection1-first-section.jpg)
@@ -144,7 +144,7 @@ Create two VPN connections:
 
 #### VPN 2 – `aws-to-gcp-vpn2`
 
-- **Target Gateway:** `aws-to-gcp-vpn-gw`
+- **Virtual Private Gateway:** `aws-to-gcp-vpn-gw`
 - **Customer Gateway:** `aws-to-gcp-cgw2`
 - **Routing Type:** Dynamic (BGP)
 ![AWS-VPN-Connection1-Section2](/Screenshots/aws-vpn-connection2-first-section.jpg)
