@@ -54,8 +54,10 @@ The Cloud Router manages dynamic BGP sessions for the VPN tunnels.
    - **BGP Peer keepalive interval:** `60`
    - **BGP Identifier:** Leave blank
    - **Advertised Routes:** Use default (advertise all visible subnets)
+
+     ![GCP-Cloud-Router-Build](/Screenshots/gcp-cloud-router-build.jpg)
+
 4. Click **Create**
-![GCP-Cloud-Router-Build](/Screenshots/gcp-cloud-router-build.jpg)
 
 ---
 
@@ -66,6 +68,7 @@ The Cloud Router manages dynamic BGP sessions for the VPN tunnels.
 1. Go to **VPC Network > VPN**
 2. Click **Create VPN Connection**
 3. Select **High-availability (HA) VPN**
+
    ![GCP-HA-Availability](/Screenshots/gcp-ha-availability.jpg)
 
 4. Set:
@@ -75,7 +78,7 @@ The Cloud Router manages dynamic BGP sessions for the VPN tunnels.
 
 5. Click **Create & Continue**
 6. After creation, copy and note the public IP addresses for **Interface 0** and **Interface 1**. These will be used in AWS.
-   
+
    ![GCP-HA-VPN-Gateway](/Screenshots/gcp-ha-vpn-gw.jpg)
 
 ---
