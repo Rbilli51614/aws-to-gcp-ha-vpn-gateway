@@ -1,12 +1,9 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36" version="24.8.0">
   <diagram name="Page-1" id="RtwXFB6cra_HKFLxf8_u">
-    <mxGraphModel dx="1900" dy="653" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1900" dy="653" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="ebjIdflYq6u5eo75sP1I-17" value="BGP" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
-          <mxGeometry x="334" y="172" width="202" height="202" as="geometry" />
-        </mxCell>
         <mxCell id="ebjIdflYq6u5eo75sP1I-1" value="" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/buildings/Medium_Business_Building.svg;" vertex="1" parent="1">
           <mxGeometry x="790" y="240.3" width="54.6" height="70.19999999999999" as="geometry" />
         </mxCell>
@@ -79,6 +76,9 @@
         <mxCell id="ebjIdflYq6u5eo75sP1I-26" value="169.254.0.5/30" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontColor=#3333FF;" vertex="1" parent="1">
           <mxGeometry x="240" y="440" width="60" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="ebjIdflYq6u5eo75sP1I-17" value="&lt;b&gt;&lt;font style=&quot;font-size: 36px;&quot;&gt;BGP: ASN&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;65501 - 65515&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="334" y="172" width="202" height="202" as="geometry" />
+        </mxCell>
         <mxCell id="ebjIdflYq6u5eo75sP1I-27" value="169.254.0.5/30" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontColor=#3333FF;" vertex="1" parent="1">
           <mxGeometry x="570" y="440" width="60" height="30" as="geometry" />
         </mxCell>
@@ -88,8 +88,38 @@
         <mxCell id="ebjIdflYq6u5eo75sP1I-33" value="Customer&#xa;gateway" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#232F3E;fillColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.customer_gateway;" vertex="1" parent="1">
           <mxGeometry x="690" y="225" width="60" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="ebjIdflYq6u5eo75sP1I-34" value="Text" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="400" y="280" width="60" height="30" as="geometry" />
+        <mxCell id="ebjIdflYq6u5eo75sP1I-34" value="PreShared Key Exchange" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="360" y="300" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ebjIdflYq6u5eo75sP1I-35" value="Public IP for VPN Gateway" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#3333FF;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="350" y="130" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ebjIdflYq6u5eo75sP1I-37" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.991;exitY=0.74;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="ebjIdflYq6u5eo75sP1I-35" target="ebjIdflYq6u5eo75sP1I-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="320" as="sourcePoint" />
+            <mxPoint x="450" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ebjIdflYq6u5eo75sP1I-38" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.012;exitY=0.793;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="ebjIdflYq6u5eo75sP1I-35" target="ebjIdflYq6u5eo75sP1I-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="521" y="169" as="sourcePoint" />
+            <mxPoint x="591" y="203" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ebjIdflYq6u5eo75sP1I-40" value="Public IP for VPN Gateway" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#3333FF;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="350" y="374" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ebjIdflYq6u5eo75sP1I-41" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.986;exitY=0.927;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="ebjIdflYq6u5eo75sP1I-40" target="ebjIdflYq6u5eo75sP1I-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="518" y="396" as="sourcePoint" />
+            <mxPoint x="581" y="432" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ebjIdflYq6u5eo75sP1I-42" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.012;exitY=0.793;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="ebjIdflYq6u5eo75sP1I-40" target="ebjIdflYq6u5eo75sP1I-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="521" y="413" as="sourcePoint" />
+            <mxPoint x="289" y="432" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
