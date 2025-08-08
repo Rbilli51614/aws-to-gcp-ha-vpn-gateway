@@ -5,13 +5,15 @@ Key 2 (Tunnel 2):
 Key 3 (Tunnel 3): 
 Key 4 (Tunnel 4): 
 
+
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 ASN's:
 ===============
 
-AWS ASN = 65501
-GCP ASN = 65515
+AWS ASN1 = 65001
+GCP ASN1 = 65000
+
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -63,7 +65,7 @@ Outside IP Tunnel 4:     **Enter  IP Here**
 GCP Interface
 ===============
 
-GPC Interface Tunnel 1:	 **Enter  IP Here**
-GCP Interface Tunnel 2:	 **Enter  IP Here**
+GPC Interface Tunnel 1:	 34.124.18.171
+GCP Interface Tunnel 2:	 34.104.82.36
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

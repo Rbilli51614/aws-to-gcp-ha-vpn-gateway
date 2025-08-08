@@ -9,7 +9,7 @@ This guide provides a comprehensive, step-by-step walkthrough for establishing a
 ---
 
 ## 🔗 References
-
+- [RFC 2401 - Security Architecture for Internet Protocol] (https://datatracker.ietf.org/doc/html/rfc2401)
 - [RFC 4271 – BGP-4](https://datatracker.ietf.org/doc/html/rfc4271)  
 - [GCP HA VPN with AWS Tutorial](https://cloud.google.com/network-connectivity/docs/vpn/tutorials/create-ha-vpn-connections-google-cloud-aws)
 
@@ -43,14 +43,14 @@ The Cloud Router manages dynamic BGP sessions for the VPN tunnels.
 
 🔧 **Steps**
 
-1. Navigate to **Network Services > Cloud Router**
+1. Navigate to **Network Connectivity > Cloud Router**
 2. Click **Create Router**
 3. Enter the following:
    - **Name:** `gcp-to-aws-cloud-router`
    - **Description:** `gcp-to-aws-cloud-router`
    - **Network:** `main-vpc` or `default`
    - **Region:** `southamerica-east1` (São Paulo)
-   - **Cloud Router ASN:** `65515`
+   - **Cloud Router ASN:** `65000`
    - **BGP Peer keepalive interval:** `60`
    - **BGP Identifier:** Leave blank
    - **Advertised Routes:** Use default (advertise all visible subnets)
@@ -65,7 +65,7 @@ The Cloud Router manages dynamic BGP sessions for the VPN tunnels.
 
 🔧 **Steps**
 
-1. Go to **VPC Network > VPN**
+1. Go to ** Network Connectivity ** > VPN**
 2. Click **Create VPN Connection**
 3. Select **High-availability (HA) VPN**
 
@@ -95,11 +95,11 @@ These act as representations of the remote GCP VPN gateway on AWS.
 2. Click **Create Customer Gateway** twice:
 
    - **Name:** `aws-to-gcp-cgw1`
-     - **BGP ASN:** `65515`
+     - **BGP ASN:** `65534`
      - **IP Address:** GCP Interface 0 public IP
 
    - **Name:** `aws-to-gcp-cgw2`
-     - **BGP ASN:** `65515`
+     - **BGP ASN:** `65534`
      - **IP Address:** GCP Interface 1 public IP
 
 3. Leave other fields as default.

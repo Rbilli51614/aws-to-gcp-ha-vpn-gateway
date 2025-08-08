@@ -22,53 +22,7 @@ This guide walks you through the complete deployment of a high-availability VPN 
 
 ```plaintext
 ├── Screenshots/
-│   ├── aws-customer-gw-results.jpg
-│   ├── aws-virtual-pgw-results.jpg
-│   ├── aws-vpn-connection1-complete.jpg
-│   ├── aws-vpn-connection1-first-section.jpg
-│   ├── aws-vpn-connection1-last-section.jpg
-│   ├── aws-vpn-connection1-tunnel1-section1.jpg
-│   ├── aws-vpn-connection1-tunnel1-section2.jpg
-│   ├── aws-vpn-connection1-tunnel1-section3.jpg
-│   ├── aws-vpn-connection1-tunnel1-section4.jpg
-│   ├── aws-vpn-connection1-tunnel2-section1.jpg
-│   ├── aws-vpn-connection2-complete.jpg
-│   ├── aws-vpn-connection2-first-section.jpg
-│   ├── aws-vpn-connection2-last-section.jpg
-│   ├── aws-vpn-connection2-tunnel3-section1.jpg
-│   ├── aws-vpn-connection2-tunnel4-section1.jpg
-│   ├── diagram.jpg
-│   ├── gcp-bgp-tunnel1-complete.jpg
-│   ├── gcp-bgp-tunnel1-section1.jpg
-│   ├── gcp-bgp-tunnel1-section2.jpg
-│   ├── gcp-bgp-tunnel2-complete.jpg
-│   ├── gcp-bgp-tunnel2-section1.jpg
-│   ├── gcp-bgp-tunnel2-section2.jpg
-│   ├── gcp-bgp-tunnel3-complete.jpg
-│   ├── gcp-bgp-tunnel3-section1.jpg
-│   ├── gcp-bgp-tunnel3-section2.jpg
-│   ├── gcp-bgp-tunnel4-complete.jpg
-│   ├── gcp-bgp-tunnel4-section1.jpg
-│   ├── gcp-bgp-tunnel4-section2.jpg
-│   ├── gcp-cloud-router-build.jpg
-│   ├── gcp-cloud-router-complete.jpg
-│   ├── gcp-cloud-router-selection.jpg
-│   ├── gcp-cloud-vpn-gateways.jpg
-│   ├── gcp-cloud-vpn-tunnels.jpg
-│   ├── gcp-ha-availability.jpg
-│   ├── gcp-ha-vpn-gw.jpg
-│   ├── gcp-peer-vpn-gateways.jpg
-│   ├── gcp-peer-vpn-gw1.jpg
-│   ├── gcp-peer-vpn-gw2.jpg
-│   ├── gcp-vpn-tunnel-1.jpg
-│   ├── gcp-vpn-tunnel-2.jpg
-│   ├── gcp-vpn-tunnel-3.jpg
-│   ├── gcp-vpn-tunnel-4.jpg
-│   ├── gcp-vpn-tunnels-complete.jpg
-│   ├── PSK.png
-│   ├── teardown-aws-cgw-results.jpg
-│   ├── teardown-aws-vpgw-results.jpg
-│   └── teardown-aws-vpn-connections-results.jpg
+│   ├── 
 ├── .gitignore
 ├── 1-authentication.tf
 ├── 2-backend.tf
